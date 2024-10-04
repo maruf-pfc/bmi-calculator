@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: "Poppins", system-ui;
+}
+
+h2{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bmi-calculator {
+  width: 400px; 
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+}
+
+.bmi-calculator input[type="number"],
+.bmi-calculator input[type="text"] {
+  margin: 10px 0;
+  padding: 12px;
+  width: calc(100% - 24px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+.bmi-calculator button {
+  padding: 12px 24px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.bmi-calculator button:hover {
+  background-color: #005bb5;
+}
+
+.bmi-calculator .advice {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+.bmi-calculator .radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.bmi-calculator .radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.bmi-calculator .radio-group input[type="radio"] {
+  margin-right: 5px;
+  accent-color: #0070f3;
+}
+
+@media (max-width: 600px) {
+  .bmi-calculator {
+    padding: 20px;
+  }
+}
+
+.bmi-calculator .advice.severe-thinness {
+  color: #ff0000; 
+}
+
+.bmi-calculator .advice.moderate-thinness {
+  color: #ff4500; 
+}
+
+.bmi-calculator .advice.mild-thinness {
+  color: #ffa500;
+}
+
+.bmi-calculator .advice.normal {
+  color: #00cc66;
+}
+
+.bmi-calculator .advice.overweight {
+  color: #ffcc00;
+}
+
+.bmi-calculator .advice.obese-class-i {
+  color: #ff9900;
+}
+
+.bmi-calculator .advice.obese-class-ii {
+  color: orangered; 
+}
+
+.bmi-calculator .advice.obese-class-iii {
+  color: red;
+}
+
+.enterInputs{
+  color: orangered;
+  margin-top: 10px;
+}
