@@ -82,9 +82,15 @@ h2{
   accent-color: #0070f3;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 300px) {
   .bmi-calculator {
-    padding: 20px;
+    width: 330px;
+  }
+}
+
+@media (min-width: 400px) {
+  .bmi-calculator {
+    width: 400px;
   }
 }
 
